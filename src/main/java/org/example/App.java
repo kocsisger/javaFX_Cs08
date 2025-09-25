@@ -17,6 +17,7 @@ public class App extends Application {
 
         stage.setScene(scene);
         stage.setTitle("New titler");
+        //Some comment added
         stage.show();
     }
 
