@@ -8,12 +8,12 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.MainController">
    <children>
-      <Button layoutX="233.0" layoutY="138.0" mnemonicParsing="false" text="Change">
+      <Button layoutX="233.0" layoutY="138.0" mnemonicParsing="false" onAction="#handleClick" text="Change">
          <font>
             <Font size="37.0" />
          </font>
       </Button>
-      <Label layoutX="252.0" layoutY="240.0" text="Summer">
+      <Label fx:id="seasonsLabel" layoutX="252.0" layoutY="240.0" text="Summer">
          <font>
             <Font size="37.0" />
          </font>
