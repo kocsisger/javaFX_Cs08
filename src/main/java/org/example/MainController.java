@@ -4,8 +4,23 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 
 public class MainController {
+
+    @FXML
+    private Label creditsLabel;
+
+    @FXML
+    private Label dateOfBirthLabel;
+
+    @FXML
+    private Label nameLabel;
+
     @FXML
     private Label seasonsLabel;
+
+    @FXML
+    void handleLoadButtonClicked() {
+
+    }
 
     @FXML
     void handleClick() {
