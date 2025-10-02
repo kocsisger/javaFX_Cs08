@@ -15,14 +15,14 @@ public class App extends Application {
     public void start(Stage stage) throws IOException {
         //View
         var loader = new FXMLLoader(getClass().getResource("main.fxml"));
+        var scene = new Scene(loader.load());
+        scene.getStylesheets().add(getClass().getResource("style.css").toExternalForm());
+
         //Model
         Model model = new SubModel();
         //Contorller
         MainController controller = (MainController) loader.getController();
         controller.setModel(model);
-
-        var scene = new Scene(loader.load());
-        scene.getStylesheets().add(getClass().getResource("style.css").toExternalForm());
 
         stage.setScene(scene);
         stage.setTitle("New titler");

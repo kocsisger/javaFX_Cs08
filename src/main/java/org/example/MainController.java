@@ -27,7 +27,9 @@ public class MainController {
 
     @FXML
     void handleLoadButtonClicked() {
-
+        nameLabel.setText(model.getStudent().getName());
+        creditsLabel.setText("" + model.getStudent().getCredits());
+        dateOfBirthLabel.setText(model.getStudent().getDateOfBirth().toString());
     }
 
     @FXML
